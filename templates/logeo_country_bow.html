@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="es">
+<head> 
+<title>Logeo: Spanish Explorer</title>
+<link rel="stylesheet" type="text/css" href="static/logeo_home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="1000" />
+<style>
+<script>$(document).ready(function(){ $('#TextBoxId').keypress(function(e){   if(e.keyCode==13)   $('#linkadd').click(); }); });</script>
+
+</style>
+</head>
+
+
+
+<body class="main_body">
+<div class="title"><h1><a class="title" href="/">logeo</a></h1></div>
+<!-- <div class="subtitle1"><h2>Explore the top words from tweets of 21 Spanish speaking countries</h2></div> -->
+<div class="subtitle1"><h2>Explore the top words from 221 Spanish speaking cities</h2></div>
+
+
+
+<div class="form">
+<form  action= "{{ url_for('home') }}" method="post" role="form">
+{{ form.csrf }}
+<div class="form-group">
+<input type="text" class="form-control" id="name" name="name" 
+placeholder=""></div>
+<div class="input-submit"><input type="submit" value="Search"></div>
+</form>
+</div>
+
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for message in messages %}
+{% if "Please" not in message[1]: %}
+
+
+<div class="query"><h3>{% include "query_maps/query.html" %}</h3></div>
+
+
+<div class="map">
+
+
+{% include "query_maps/sim_cities_map.html" %}
+
+
+<div class="note">Click on the circles to see similar words in each city</div>
+</div>
+
+
+
+<div class="top_cities">{{ message[1] }}</div>
+{% endif %}
+
+{% if "Please" in message[1]: %}
+<div class="alert_warning">{{ message[1] }}</div>
+
+
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<div class="map"> {% include "query_maps/country_map.html" %} </div>
+
+<div class="country_top">{% include "query_maps/country_bow_single_country_list.html" %}</div>
+
+
+<div class="country_top">
+<h4>Most typical words per country:</h4>{% include "query_maps/country_tfidf_list.html" %}</div>
+
+
+<div class="country_top">
+<h4>Most frequent words per country:</h4>{% include "query_maps/country_bow_list.html" %}</div>
+
+
+<div class="footer">
+
+<div class="desc">
+<p>
+<strong>logeo</strong>
+is a text processing Python web app, built upon a <a class="footer" href="https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Las-5000-palabras-m-s-frecuentes-en-Twitter-en-Esp/wvij-k76z">
+Spanish language Twitter dataset</a>, with the most frequent 5,000 words from 291 Spanish speaking cities across North/South America and Spain.</p>
+<p>Here you can  explore a sample of the way people tweet in almost all the Spanish speaking countries. Discover new words, see where certain words are said with more frequency, and find similar words (similar sounding or similar in meaning) across regions.</p>
+</div>
+
+<p>
+Send me an email: luismond.nlp[at]gmail.com</p>
+<p>
+Contact me on <a class="footer" href="https://www.linkedin.com/in/luismondragon/">
+LinkedIn</a>
+</p>
+<p>
+<a class="footer" rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+<br>
+</a>
+This work is licensed under a <a class="footer" rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+Creative Commons Attribution 4.0 International License</a>.
+</p>
+</div>
+
+<script> var coll = document.getElementsByClassName("collapsible"); var i;  for (i = 0; i < coll.length; i++) {   coll[i].addEventListener("click", function() {     this.classList.toggle("active");     var content = this.nextElementSibling;     if (content.style.maxHeight){       content.style.maxHeight = null;     } else {       content.style.maxHeight = content.scrollHeight + "px";     }   }); } </script>
+
+</body>
+</html>
+
