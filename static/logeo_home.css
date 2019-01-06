@@ -1,0 +1,384 @@
+body.main_body {
+border: 1px solid #DCDDDE;
+font-family: "Tahoma";
+height:100%;
+margin:auto;
+background-color:#ffffff;
+}
+
+a:visited {
+color: #a5adce;
+}
+
+
+a.title:visited {
+color: #ffffff;
+border: 0px solid #DCDDDE;
+}
+
+a.title:visited {
+color: #ffffff;
+border: 0px solid #DCDDDE;
+}
+
+
+
+a:link {
+text-decoration: none;
+color: #00ADFF;
+
+}
+
+a.footer:visited {
+color: #F1FDFF;
+border: 0px solid #00334C;
+}
+
+
+a.footer:link {
+color: #F1FDFF;
+border: 0px solid #00334C;
+}
+
+a.title:link {
+color: #ffffff;
+border: 0px solid #DCDDDE;
+font-weight: normal;
+}
+
+span.query0 {
+border-bottom:3px solid #00ADFF;}
+
+span.query1 {
+border-bottom:3px solid #ff0038;}
+
+div.query3 {
+font-size:15px;
+text-align:left;
+padding: 0 20px 0 20px;
+letter-spacing:1px;
+
+}
+
+a.query0:link {
+	color: #000000
+}
+
+a.query1:link {
+	color: #000000
+}
+
+a.query0:visited {
+	color: #000000
+}
+
+a.query1:visited {
+	color: #000000
+}
+
+p.city_sim_score {
+	text-decoration: underline;
+	}
+
+
+h1 {
+font-size:3em;
+text-shadow: 1.3px 1.3px #7F7F7F;
+text-align: center;
+text-decoration: none;
+letter-spacing: 5px;
+font-weight: normal;
+border: 0px solid #DCDDDE;
+letter-spacing: 3px;
+margin-block-start: 0px;
+margin-block-end: 0px;
+padding: 1px 0 6px 0;
+border-bottom: 0px solid #E0E0E0;
+}
+
+h2 {
+color:#000D6B;
+font-size:1.05em;
+text-shadow: 1px 1px #E0E0E0;
+text-align: center;
+text-decoration: none;
+letter-spacing: 5px;
+font-weight: normal;
+border: 0px solid #DCDDDE;
+letter-spacing: 1px;
+margin-block-start: 0px;
+margin-block-end: 0px;
+padding: 5px 5px 5px 5px;
+border-top: 1px solid #000D6B;
+}
+
+h3 {
+background-color:#ffffff;
+text-shadow: 1.3px 1.3px #E0E0E0;
+font-size:2.4em;
+text-align: center;
+text-decoration: none;
+font-family: "Georgia";
+letter-spacing: 5px;
+font-weight: normal;
+border: 0px solid #DCDDDE;
+letter-spacing: 3px;
+margin-block-start: 0px;
+margin-block-end: 0px;
+padding: 4px 0 4px 0;
+border-top: 1px solid #E0E0E0;
+color: #000000;
+}
+
+
+
+h4 {
+text-shadow: 1.4px 1.3px #f2f2f2;
+font-size:1.2em;
+text-align: center;
+text-decoration: none;
+letter-spacing: 5px;
+font-weight: normal;
+text-decoration: none;
+border: 0px solid #DCDDDE;
+letter-spacing: 3px;
+margin-block-start: 0px;
+margin-block-end: 0px;
+padding: 20px 5px 10px 5px;
+}
+
+h5 {
+text-shadow: 1.3px 1.3px #f2f2f2;
+font-size:1.2em;
+text-align: center;
+letter-spacing: 2px;
+font-weight: normal;
+border: 0px solid #DCDDDE;
+letter-spacing: 3px;
+margin-block-start: 0px;
+margin-block-end: 0px;
+color:#8e8e8e;
+padding: 10px 0 4px 0;
+}
+
+div.title {
+background-color:#00ADFF;
+color: #ffffff;
+border-top: 1px solid #E0E0E0;
+}
+
+div.subtitle1 {
+text-align: center;	
+font-size:.9em;
+background-color:#ECF8FF;
+letter-spacing: 3px;
+border: 0px solid #DCDDDE;
+}
+
+div.alert_warning {
+text-align: center;
+font-size:1.3em;
+font-family:"Tahoma";
+background-color:#FFE5F6;
+border-top: 1px solid #7F4C6E;
+padding: 10px 0 10px 0;
+color:#7F4C6E;
+}
+
+
+div.form {
+text-align: center;
+background-color:#ECF8FF;
+border: 0px solid #DCDDDE;
+padding: 6px 0 12px 6px;
+
+}
+.form-control {
+width: 60%;
+height: 20px;
+float: left;
+font-size:1.1em;
+padding-left:20px;
+background-color:#ffffff;
+font-family: "Tahoma";
+border-top: 1px solid #E0E0E0;
+
+}
+.input-submit {
+margin-left: 70%;
+padding: 3px 3px 3px 3px;
+height: 22px;
+width: 20%;
+}
+
+input[type=text] {
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text]:focus {
+    border-color:#333;
+}
+input[type=submit] {
+    background:#00ADFF;
+	font-size:1.1em;
+	
+	color:#e5f6ff;	
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+div.map {
+text-align: center;
+background-color:#ffffff;
+border: 0px solid #DCDDDE;
+padding: 10px 0 0 0;
+}
+
+div.leaflet-container  {
+margin: auto;
+border: 1px solid #DCDDDE;
+
+}
+div.leaflet-popup-content-wrapper {
+/* background-color: rgba(255, 255, 255, 1); */
+background-color: #FAFAF8;
+box-shadow: 0 0px 0px rgba(0,0,0,0.4);
+margin-block-start: 0px;
+margin-block-end: 0px;
+}
+
+div.leaflet-popup-content {
+}
+
+div.note {
+font-family:"Tahoma";
+font-size:1em;
+padding: 0px 0 10px 0;
+color: #475566;
+border: 0px solid #DCDDDE;
+letter-spacing: 2px;
+margin-top:20px;
+
+}
+
+
+div.map-info {
+font-family: "Tahoma";
+text-align:center;
+border-top: 1px solid #E0E0E0;
+}
+
+div.sim_links {
+	padding: 5px 0 15px 0;
+
+}
+
+div.sim_words0 {
+	
+	padding: 0 10% 10px 10%;
+	letter-spacing: 2px;
+	border-top: 1px solid #00ADFF;
+	
+}
+
+div.sim_words1 {
+	padding: 0 10% 10px 10%;
+	letter-spacing: 2px;
+	border-top: 1px solid #ff0038;
+	
+}
+
+
+div.top_cities {
+font-size:1em;
+text-align:center;
+background-color:#FFFFFF;
+letter-spacing: 1px;
+border: 0px solid #DCDDDE;
+border-top: 1px solid #E0E0E0;
+}
+
+div.country_top {
+background-color:#ffffff;
+text-align: center;
+font-family: "Tahoma";
+letter-spacing: 2px;
+border: 0px solid #DCDDDE;
+margin-block-start: 0px;
+margin-block-end: 0px;
+border-top: 1px solid #E0E0E0;
+padding: 10px 0 10px 0;
+}
+
+ul {
+list-style-type: none;
+border: 0px solid #DCDDDE;
+padding: 0 0 0 0;
+}
+
+li {
+padding:2px 0 2px 0;
+border: 0px solid #DCDDDE;
+}
+
+.collapsible {
+  background-color: #fcfcfc;
+  color:  #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 1.1em;
+  font-weight:
+}
+
+.active, .collapsible:hover {
+  background-color: #ECF8FF;
+}
+
+.content {
+  padding: 0 5% 0 5%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+}
+
+div.content1 {
+  padding: 0 5% 0 5%;
+  background-color: #ffffff;
+}
+
+
+
+div.desc {
+color: #E5F1F7;
+background-color:#00ADFF;
+font-size:1em;
+text-align:center;
+font-family:"Tahoma";
+border: 0px solid #DCDDDE;
+margin-block-start: 0px;
+margin-block-end: 0px;
+padding: 0 5% 0 5%;
+letter-spacing: 1px;
+
+}
+div.footer {
+color: #E5F1F7;
+margin-left:auto;
+text-align: center;
+font-size:1em;
+background-color:#00ADFF;
+border: 1px solid #DCDDDE;
+margin-block-start: 0px;
+margin-block-end: 0px;
+padding: 0 10% 0 10%;
+letter-spacing: 2px;
+
+}
