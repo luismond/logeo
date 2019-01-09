@@ -1,7 +1,7 @@
 # logeo
 www.moorelanguage.com
 
-This is an application based on a dataset (The top-5000 frequent Spanish words in Twitter for 331 cities in the Spanish-speaking world, https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/The-top-5000-frequent-Spanish-words-in-Twitter-for/nmid-inr9). 
+This is an application based on a dataset (The top-5000 frequent Spanish words in Twitter for 331 cities in the Spanish-speaking world. https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/The-top-5000-frequent-Spanish-words-in-Twitter-for/nmid-inr9). 
 
 This app allows you to explore the whole dataset on a map. Also, it leverages the dataset to implement a similarity model, to guess the city of any text you input.
 
