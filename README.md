@@ -1,4 +1,5 @@
 # logeo
+www.moorelanguage.com
 
 This is an application that allows you to explore the whole dataset on a map. Also, it leverages the dataset to implement a similarity model, to guess the city of any text you input.
 
