@@ -1,0 +1,52 @@
+Hello subreddit!
+#Introduction
+I am happy to present my first web application, written entirely in Python!
+www.moorelanguage.com
+
+I've been working in translation/localization for some years. 
+Then I started learning more about text data and decided to learn Python.
+
+For the last couple of months I have been working on a side project that involves data analysis and text processing of Spanish data.
+
+#The data
+So, I have seen some analysis on Twitter data, but none in Spanish so far. (I am a Spanish native speaker). 
+Thanks to Google Dataset Search I found a nice dataset.
+[The top-5000 frequent Spanish words in Twitter for 331 cities in the Spanish-speaking world.](https://toolbox.google.com/datasetsearch/search?query=twitter%20spanish&docid=KjIKji0L9hTF2vQAAAAAAA%3D%3D)
+
+
+This looked very interesting to me. I started learning some libraries and exploring the data set. Then I decided to learn how make a web application with it.
+#The app
+
+In short, this is an application that allows you to explore the whole dataset on a map. Also, it leverages the dataset to implement a similarity model, to guess the city of any text you input.
+
+You can do the following things within the app:
+
+ Find the regional origin of a text in Spanish.
+<gif>
+ Enter a text. (a tweet, a song lyrics a piece of news or your own text). See which cities are the most similar to the text you entered. 
+<gif>
+ Just explore the data set on a map.
+<gif>
+ Enter one word. See the cities in which the word is used with the highest frequency. Click on the circles on the map to open a word cloud with the most similar words in each city, morphologically and semantically.
+<gif>
+ Compare two words. Enter two words to see the cities in which these are used with the highest frequency. Something akin to Google trends.
+<gif>
+
+Click on any country name. See the most frequent or unique words for that country. 
+<gif>
+
+#Tools
+I used [Pandas](https://pandas.pydata.org/) to read and process the dataset. 
+For text/natural language processing, I used [Gensim](https://radimrehurek.com/gensim/). 
+To plot the cities on a map, I used [Folium](https://github.com/python-visualization/folium). 
+And finally, I used [Flask](http://flask.pocoo.org/) to build a small web app, which I learned to host on Digital Ocean. 
+#Conclusion
+I enjoyed this process a lot! I am happy about it, I learned a lot, and the most important thing, I was able to materialize my idea. 
+I would really like to go beyond translation/localization and find work in the text processing / NLP field. 
+
+
+The code is in github and I'm sure I made mistakes and maybe some coding is awkward. Bear with me as it is my first web app. I am open to suggestions and corrections though!
+#Next steps
+I will definitely look for a similar data set in English and make the app work for English speaking countries also. I would also like to find a data set from a different source, beyond Twitter. 
+
+What are your thoughts? What could I do next? 
